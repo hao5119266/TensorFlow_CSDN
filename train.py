@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Thu Feb  6 15:57:38 2020
 
+"""
 import tensorflow.compat.v1 as tf
 import cv2
 import numpy as np
@@ -79,7 +82,7 @@ test_x=test_x.reshape(test_x.shape[0],size,size,3)
 train_x=train_x.astype('float32')/255.0
 test_x=test_x.astype('float32')/255.0
             
-print('train size:%s,test size:%s'%(len(train_x)))
+print('train size:%s,test size:%s'%(len(train_x),len(test_x)))
 
 #图片块，每次取100张图片
 batch_size=100
